@@ -1,5 +1,5 @@
 ### Aim 
-Measurement and Control system - Implementation for one application
+Measurement and Control for industrial application
 
 ### Objective
 - Select suitable sensor for the application.
