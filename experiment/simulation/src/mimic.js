@@ -65,7 +65,7 @@ $("#div123").html("");
 		
 		
 		paper.path('M' + (x + 532 ) + ' ' + (y + 570 ) + 'l 50 0   M' + (x + 532) + ' ' + (y + 500) + ' l 50 0 M'
-		+ (x + 532) + ' ' + (y + 650) + ' l 50 0 M' + (x + 435) + ' ' + (y + 570) + ' l 0 0  M' )
+		+ (x + 532) + ' ' + (y + 650) + ' l 50 0 M' + (x + 200) + ' ' + (y + 200) + ' l -50 0 l 0 70  M'+ (x + 200) + ' ' + (y + 400) + 'l -50 0 l 0 -70' )
 			.attr({ 'stroke': 'black', 'stroke-width': '3' });	
 							
 	
@@ -115,6 +115,7 @@ $("#div123").html("");
 		var pump_circle = paper.circle(x + 580, y + 110, 30).attr({ 'stroke': 'black', 'stroke-width': '3', 'fill': 'white' });
 		var pump_circle = paper.circle(x + 580, y + 420, 30).attr({ 'stroke': 'black', 'stroke-width': '3', 'fill': 'white' });	
 		var pump_circle = paper.circle(x + 120, y + 420, 30).attr({ 'stroke': 'black', 'stroke-width': '3', 'fill': 'white' });	
+		var pump_circle = paper.circle(x + 150, y + 300, 30).attr({ 'stroke': 'black', 'stroke-width': '3', 'fill': 'white' });	
 		
 		paper.path('M' + (x + 470 ) + ' ' + (y + 420 ) + 'l 80 0   M' + (x + 470) + ' ' + (y + 420) + ' l 0 -20 M'
 		+ (x + 580) + ' ' + (y + 70) + ' l 0 10 M' + (x + 580) + ' ' + (y + 50) + ' l 0 10  M' 
@@ -200,11 +201,49 @@ $("#div123").html("");
 		'font-weight': "bold"
 		});
 		
+		var u2txt = paper.text(x + 150, y + 300, "DPT").attr({
+		'font-size': 20,
+		'font-weight': "bold"
+		});
+		
+		var u2txt = paper.text(x + 140, y + 520, "DPT - Differential Pressure Transmiter").attr({
+		'font-size': 20,
+		'font-weight': "bold"
+		});
+		
 		var u2txt = paper.text(x + 820, y + 420, "Kg/cm"+unescape('%B2')+"").attr({
 		'font-size': 20,
 		'font-weight': "bold"
 		});
+		var u2txt = paper.text(x + 750, y, "PY - Current to Pneumatic ").attr({
+		'font-size': 20,
+		'font-weight': "bold"
+		});
+		var u2txt = paper.text(x + 760, y+20, " Convertor").attr({
+		'font-size': 20,
+		'font-weight': "bold"
+		});
+		
+		var u2txt = paper.text(x + 730, y+180, "PC - Pressure Controller").attr({
+		'font-size': 20,
+		'font-weight': "bold"
+		});
+		var u2txt = paper.text(x + 730, y+350, "PT - Pressure Transmitter").attr({
+		'font-size': 20,
+		'font-weight': "bold"
+		});
+		var u2txt = paper.text(x+80, y+480, "LSL - Low level Switch").attr({
+		'font-size': 20,
+		'font-weight': "bold"
+		});
+		
+		
 		}
+		
+//		
+//
+//
+//
 		
 		y1 = 0;
 		sv_V1.click(function(event){
@@ -365,6 +404,7 @@ function PC_decrement(x,y){
 			}
 		}, 1000);		
 }
+
 //}
 //console.log( "ready!" );
 });
