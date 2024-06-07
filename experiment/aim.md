@@ -1,5 +1,5 @@
 ### Aim 
-Characterize a density sensor for a particular application
+Measurement and Control for industrial application
 
 ### Objective
 - Select suitable sensor for the application.
