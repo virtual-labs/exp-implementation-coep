@@ -3,7 +3,7 @@ var lengthmax = 0;
 var buttonflg = 0;
 var reset = 0;
 $("#refer").prop('hidden',false);
-function config(){
+function config1(){
 	$("#main-div-conf").html('');	
      $("#canvas-div").html('');	
      

@@ -456,7 +456,7 @@ function mimic() {
 					$("#canvas-div").append(htm);
 					node1=  paper.text(x +200 , y -40, 'Configure again to take a another reading').attr({ 'font-size': 25 ,'fill':'#d42a3e'});
 					 node1.animate({x:x+230,y: 10 , 'font-size': 30}, 1000, 'bounce')
-					setTimeout(function() { config();},time*2200);
+					setTimeout(function() { config1();},time*2200);
 				}, time * 2100);
 				
 				
