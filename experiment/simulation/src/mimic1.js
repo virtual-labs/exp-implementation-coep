@@ -24,12 +24,16 @@ $("#div123").html("");
 		x = 10;
 		y = 10;
 		
-		meter(x,y)
+//		meter(x,y)
 function meter(x,y){
-	paper.rect(x , y+10, 100, 50).attr({ 'stroke-width': '5', 'fill': '#bdf582' }).toFront();
+//	paper.rect(x , y+10, 100, 50).attr({ 'stroke-width': '5', 'fill': '#bdf582' }).toFront();
+	
+	var l = paper.path("M "+(x+200)+" "+(y+150)+" l 0 100 l").attr({ 'stroke': '#000', 'stroke-width': 4});
+	var l1 = paper.path("M "+(x+800)+" "+(y+150)+" l 0 100").attr({ 'stroke': '#000', 'stroke-width': 4});
+		diaLine = paper.path("M "+(x+200)+" "+(y+200)+" l 600 0").attr({ 'stroke': '#000', 'stroke-width': 10});
 }
 
-filter(x,y);
+//filter(x,y);
 function filter(x,y){
 	r = [];
 		  r[0] = paper.path('M' +(x+150)+ ' ' +(y+100)+ 'l 0 0').attr({'stroke':'black','stroke-width':'5'})
@@ -116,5 +120,49 @@ function filter(x,y){
 			  
 		  }); 	  
 		  });
+
 }
+
+var diaLine = paper.path("M "+(x+200)+" "+(y+200)+" l 0 0").attr({ 'stroke': '#000', 'stroke-width': 10});
+ 
+  var lenx = 400;
+
+  var thik = 2;
+ diaphramStd(x,y);
+	function diaphramStd(x,y){
+		var l = paper.path("M "+(x+200)+" "+(y+150)+" l 0 100 l").attr({ 'stroke': '#000', 'stroke-width': 4});
+		
+		var s = paper.path("M "+(x+200)+" "+(y+150)+" l -20 20 M"+(x+200)+" "+(y+170)+"l -20 20 M "+(x+200)+" "+(y+190)+"l -20 20 M "+(x+200)+" "+(y+210)+"l -20 20 M"
+		+""+(x+200)+" "+(y+230)+"l -20 20 ").attr({ 'stroke': '#000', 'stroke-width': 1});
+		 diaLine = paper.path("M "+(x+200)+" "+(y+200)+" l "+lenx+" 0").attr({ 'stroke': '#000', 'stroke-width': thik});
+
+//		var arc = paper.path("M "+(x+200)+" "+(y+200)+" A 35 12 1 0 0 "+(x+800)+" "+(y+200)).attr({ 'stroke': '#000', 'stroke-width': 4});
+	}
+	std2(x-100,y);
+	var x1=10;
+	var y1=200;
+	function std2(x,y){
+		var l1 = paper.path("M "+(x+800)+" "+(y+150)+" l 0 100").attr({ 'stroke': '#000', 'stroke-width': 4});
+		var s1 = paper.path("M "+(x+800)+" "+(y+150)+" l 20 20 M"+(x+800)+" "+(y+170)+"l 20 20 M "+(x+800)+" "+(y+190)+"l 20 20 M "+(x+800)+" "+(y+210)+"l 20 20 M"+(x+800)+" "+(y+230)+"l 20 20").attr({ 'stroke': '#000', 'stroke-width': 1});
+//		diaLine = paper.path("M "+(x+200)+" "+(y+200)+" l 400 0").attr({ 'stroke': '#000', 'stroke-width': 10});
+	}
+	diaphramCurve(x,y);
+	function diaphramCurve(x,y){
+//		var x= x1+244;
+//			var y=y1+115;
+		  diaLine.hide();
+//		var l = paper.path("M "+(x+200)+" "+(y+150)+" l 0 100 l").attr({ 'stroke': '#000', 'stroke-width': 4});
+//		var l1 = paper.path("M "+(x+800)+" "+(y+150)+" l 0 100").attr({ 'stroke': '#000', 'stroke-width': 4});
+//		var l1 = paper.path("M "+(x+200)+" "+(y+200)+" l 600 0").attr({ 'stroke': '#000', 'stroke-width': 10});
+
+		var arc = paper.path("M "+(x+200)+" "+(y+200)+" A 80 9 0 0 0 "+(x+700)+" "+(y+200)).attr({ 'stroke': '#000', 'stroke-width': 4});
+//		var arc = paper.path("M "+(x+200)+" "+(y+250)+" A 300 60 0 0 0 "+(x+400)+" "+(y+250)).attr({ 'stroke': '#000', 'stroke-width': thik});
+		var arc = paper.path("M "+(x+200)+" "+(y+350)+" A 200 50 0 0 0 "+(x+500)+" "+(y+350)).attr({ 'stroke': '#000', 'stroke-width': thik});		
+		var arc = paper.path("M "+(x+200)+" "+(y+400)+" A 300 60 0 0 0 "+(x+600)+" "+(y+400)).attr({ 'stroke': '#000', 'stroke-width': thik});
+
+		var arc = paper.path("M "+(x+200)+" "+(y+300)+" A 300 150 0 0 0 "+(x+700)+" "+(y+300)).attr({ 'stroke': '#000', 'stroke-width': 4});
+	}	
+	
+	
+	
 });

@@ -1,4 +1,4 @@
-![1](images/img1.png)
+![1](images/control.png)
 ###### The process depicted in the diagram is aimed at "distribution of water at same flow rate in spite of reduction in head of water in tank". The process consists of : 
 1.	A tank for storing water
 2.	Inlet for water through  solenoid valve V1
