@@ -45,6 +45,20 @@
 		<span id="colgName">COEP Technological University</span>		
 		
 	</header>
+	
+	<div  class="row container" style="">	
+	  <div  class="col-sm-8" >
+	  </div>
+	   <div  class="col-sm-2" >
+		<button type="button" class="btn btn-danger" style="margin-top:7px;margin-bottom:5px;"  id = "pdfDownload" hidden>
+	  Download Result
+	 
+	</button>
+	</div>
+	 <div  class="col-sm-2" >
+	 </div>
+	
+	</div>
 
 
 	<div class="row">
@@ -158,12 +172,29 @@ Copyrights &copy; COEP - Virtual Lab
 </body>
 
 <!-- https://code.jquery.com/jquery-3.5.1.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
 <script type="text/javascript" src="lib/raphael.js"></script>
 <script type="text/javascript" src="lib/raphael.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> -->
+  
+<!--   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+<!--   <script type="text/javascript" src="src/bootstrap.min.js"></script> -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
 
@@ -193,10 +224,10 @@ proc += ''
 	+ '<h3> Simulation </h3>'
 	+ '<ol><li> Click on water inlet valve (V1) to fill the tank '
 	+ '<li> Observe the DPT reading '
-	+ '<li> After that click on value V3 and observe DPT reading, PC reading and action on values V4,V5 and V6 '
+	+ '<li> After that click on value V3 and observe DPT reading, PC reading and action on valves V4,V5 and V6 '
 	+ '<li> LSL sensor turns red after water level reaches to low level '
 	+ '<li> Click on V1 to fill tank again  '
-	+ '<li> Observe DPT, Pc readings and action on values V4,V5 and V6'
+	+ '<li> Observe DPT, Pc readings and action on valves V4,V5 and V6'
 	+ '<li> Process is completed for one iteration. </ol>'
 
 	+ '<h3> Configuration for second iteration </h3>'
@@ -206,10 +237,10 @@ proc += ''
 	+ '<h3> Simulation for  second iteration </h3>'
 	+ '<ol><li> Click on water inlet valve (V1) to fill the tank '
 	+ '<li> Observe the DPT reading '
-	+ '<li> After that click on value V3 and observe DPT reading, PC reading and action on values V4,V5 and V6 '
+	+ '<li> After that click on value V3 and observe DPT reading, PC reading and action on valves V4,V5 and V6 '
 	+ '<li> LSL sensor turns red after water level reaches to low level '
 	+ '<li> Click on V1 to fill tank again  '
-	+ '<li> Observe DPT, Pc readings and action on values V4,V5 and V6'
+	+ '<li> Observe DPT, Pc readings and action on valves V4,V5 and V6'
 	+ '<li> Process is completed for both iterations. write down the observation of the plant in your note-book and click on "Result" button   </ol>'
 
 	$(".modal-body11").html(proc);

@@ -278,6 +278,11 @@ function mimic() {
 		'font-weight': "bold"
 		});
 		
+		var u2txt = paper.text(x + 100, y-20 , "SV - Solenoid Valve").attr({
+		'font-size': 20,
+		'font-weight': "bold"
+		});
+		
 		var u2txt = paper.text(x + 820, y + 420, "Kg/cm"+unescape('%B2')+"").attr({
 		'font-size': 20,
 		'font-weight': "bold"
@@ -456,7 +461,7 @@ function mimic() {
 					$("#canvas-div").append(htm);
 					node1=  paper.text(x +200 , y -40, 'Configure again to take a another reading').attr({ 'font-size': 25 ,'fill':'#d42a3e'});
 					 node1.animate({x:x+230,y: 10 , 'font-size': 30}, 1000, 'bounce')
-					setTimeout(function() { config1();},time*2200);
+					setTimeout(function() { configReset();},time*1200);
 				}, time * 2100);
 				
 				
