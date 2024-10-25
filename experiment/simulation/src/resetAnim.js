@@ -231,6 +231,10 @@ function resetMimic() {
 		'font-weight': "bold"
 		});
 		
+		var u2txt = paper.text(x + 100, y-20 , "SV - Solenoid Valve").attr({
+		'font-size': 20,
+		'font-weight': "bold"
+		});
 		
 		var u2txt = paper.text(x + 420, y + 50, "V2").attr({
 		'font-size': 20,

@@ -3,7 +3,7 @@ var lengthmax = 0;
 var buttonflg = 0;
 var reset = 0;
 $("#refer").prop('hidden',false);
-function config1(){
+function configReset(){
 	$("#main-div-conf").html('');	
      $("#canvas-div").html('');	
      
@@ -32,7 +32,8 @@ function config1(){
         +'<div class="row">'
 	   +'<div class="col-sm-6">'
 	   +'<label class="labelstyle"> Select Setpoint  : </label>'
-	   +'<label class="labelstyle"> (To maintain constant flow at the output head should remain constant) </label>'
+	   +'<label class="labelstyle"> (To maintain constant flow at the output, </label>'
+	   +'<label class="labelstyle">  head should remain constant) </label>'
 	   +'</div>'
 	  +'<div class="col-sm-3">'
 	+'<input type="text" id="setpont" style= 10px;width:100%;"  class=" form-control" />'
