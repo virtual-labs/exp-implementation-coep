@@ -40,12 +40,12 @@
     },
 	
 	{
-      "question": "Atmospheric pressure is _____",
+      "question": "A pressure controller works by comparing",
       "answers": {
-        "a": "Digital",
-        "b": "Analog",
-        "c": "Hybrid",
-        "d": "None of these"
+        "a": "The measured pressure with the desired setpoint pressure",
+        "b": "The current temperature with the pressure",
+        "c": "Voltage output with current input",
+        "d": "Fluid velocity with system volume"
       },
      
       "correctAnswer": "a",
